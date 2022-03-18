@@ -70,12 +70,13 @@ Where c.City Not In(Select o.Shipcity From Orders o Inner Join Customers c On o.
 --8. List 5 most popular products, their average price, and the customer city that ordered most quantity of it.
 With cte_TopFive
 as(
-Select t.ShipCity, t.average
-From(Select Top 5 o.ShipCity, Sum(od.Quantity) total, Avg(od.UnitPrice) average From Orders o Inner Join [Order Details] od On o.OrderID = od.OrderID
-Group By o.ShipCity
+Select  t.ShipCity, t.ProductName, t.ProductID, t.Average
+From(Select Top 5 o.ShipCity, p.ProductName, od.ProductID, Sum(od.Quantity) total, Avg(od.UnitPrice) Average From Orders o Inner Join [Order Details] od On o.OrderID = od.OrderID
+Inner Join Products p On p.ProductID = od.ProductID
+Group By o.ShipCity,p.ProductName, od.ProductID
 Order By total Desc
 )t)
-Select * From cte_TopFive
+Select * From cte_TopFive;
 
 
 --9.List all cities that have never ordered something but we have employees there.
