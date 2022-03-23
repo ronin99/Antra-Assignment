@@ -1,0 +1,15 @@
+D:\Games\c#\PracticeArrays\PracticeArrays\bin\Debug\net6.0\PracticeArrays.exe
+D:\Games\c#\PracticeArrays\PracticeArrays\bin\Debug\net6.0\PracticeArrays.deps.json
+D:\Games\c#\PracticeArrays\PracticeArrays\bin\Debug\net6.0\PracticeArrays.runtimeconfig.json
+D:\Games\c#\PracticeArrays\PracticeArrays\bin\Debug\net6.0\PracticeArrays.dll
+D:\Games\c#\PracticeArrays\PracticeArrays\bin\Debug\net6.0\PracticeArrays.pdb
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.csproj.AssemblyReference.cache
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.GeneratedMSBuildEditorConfig.editorconfig
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.AssemblyInfoInputs.cache
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.AssemblyInfo.cs
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.csproj.CoreCompileInputs.cache
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.dll
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\refint\PracticeArrays.dll
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.pdb
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\PracticeArrays.genruntimeconfig.cache
+D:\Games\c#\PracticeArrays\PracticeArrays\obj\Debug\net6.0\ref\PracticeArrays.dll
