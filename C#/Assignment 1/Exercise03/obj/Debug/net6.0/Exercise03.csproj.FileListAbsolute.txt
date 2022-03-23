@@ -1,0 +1,15 @@
+D:\Games\c#\Exercise03\Exercise03\bin\Debug\net6.0\Exercise03.exe
+D:\Games\c#\Exercise03\Exercise03\bin\Debug\net6.0\Exercise03.deps.json
+D:\Games\c#\Exercise03\Exercise03\bin\Debug\net6.0\Exercise03.runtimeconfig.json
+D:\Games\c#\Exercise03\Exercise03\bin\Debug\net6.0\Exercise03.dll
+D:\Games\c#\Exercise03\Exercise03\bin\Debug\net6.0\Exercise03.pdb
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.csproj.AssemblyReference.cache
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.GeneratedMSBuildEditorConfig.editorconfig
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.AssemblyInfoInputs.cache
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.AssemblyInfo.cs
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.csproj.CoreCompileInputs.cache
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.dll
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\refint\Exercise03.dll
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.pdb
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\Exercise03.genruntimeconfig.cache
+D:\Games\c#\Exercise03\Exercise03\obj\Debug\net6.0\ref\Exercise03.dll

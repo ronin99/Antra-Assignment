@@ -1,0 +1,15 @@
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\bin\Debug\net6.0\02UnderstandingTypes.exe
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\bin\Debug\net6.0\02UnderstandingTypes.deps.json
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\bin\Debug\net6.0\02UnderstandingTypes.runtimeconfig.json
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\bin\Debug\net6.0\02UnderstandingTypes.dll
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\bin\Debug\net6.0\02UnderstandingTypes.pdb
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.csproj.AssemblyReference.cache
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.GeneratedMSBuildEditorConfig.editorconfig
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.AssemblyInfoInputs.cache
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.AssemblyInfo.cs
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.csproj.CoreCompileInputs.cache
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.dll
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\refint\02UnderstandingTypes.dll
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.pdb
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\02UnderstandingTypes.genruntimeconfig.cache
+D:\Games\c#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net6.0\ref\02UnderstandingTypes.dll
