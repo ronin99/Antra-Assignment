@@ -9,7 +9,8 @@ namespace PracticeString
         {
             //Reverse("sample");
             //reWords("C# is not C++, and PHP is not Delphi!");
-            AllPalindromes();
+            string str = "Hi,exe? ABBA! Hog fully a string: ExE. Bob";
+            AllPalindromes(str);
 
         }
         /*1.Write a program that reads a string from the console, reverses its letters and prints the result back at the console.*/
@@ -34,10 +35,10 @@ namespace PracticeString
         /*3.Write a program that extracts from a given text all  palindromes, e.g. “ABBA”, “lamal”, “exe” and prints them on the console on a single line, 
          * separated by comma and space.Print all unique palindromes (no duplicates), sorted*/
 
-        static void AllPalindromes()
+        static void AllPalindromes(string str)
         {
             ArrayList arrayList = new ArrayList();
-            string str = "Hi,exe? ABBA! Hog fully a string: ExE. Bob";
+            
             char[] separators = { ' ', '.', ',', ':', ';', '=', '(', ')', '&', '[', ']', '\"', '\'', '\\', '/', '!', '?' };
             String[] splits = str.Split(separators, StringSplitOptions.RemoveEmptyEntries);
             foreach(string i in splits)
