@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GenericRepository/1.0.0": {
+        "dependencies": {
+          "Generics": "1.0.0"
+        },
+        "runtime": {
+          "GenericRepository.dll": {}
+        }
+      },
+      "Generics/1.0.0": {
+        "runtime": {
+          "Generics.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GenericRepository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Generics/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
