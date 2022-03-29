@@ -4,7 +4,7 @@ Protected: members can be accessible inside the current class and child class
 Internal: members are accessible in the same assembly (or namespace)
 Private: members accessible only in the current class
 Protected Internal: members accessible to the current assembly or types derived from the class
-Private Protected: members accessible to the current assembly and types derived from the class
+Private Protected: member can be accessed by types derived from the class that are declared within its containing assembly
 
 2. What is the difference between the static, const, and readonly keywords when applied to a type member?
 Static: static class cannot be inherited, cannot be instantiated, and only contain static members
