@@ -1,0 +1,12 @@
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\bin\Debug\net6.0\MovieStoreApp.Core.deps.json
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\bin\Debug\net6.0\MovieStoreApp.Core.dll
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\bin\Debug\net6.0\MovieStoreApp.Core.pdb
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.csproj.AssemblyReference.cache
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.AssemblyInfoInputs.cache
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.AssemblyInfo.cs
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.csproj.CoreCompileInputs.cache
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.dll
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\refint\MovieStoreApp.Core.dll
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.pdb
+D:\Games\c#\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\ref\MovieStoreApp.Core.dll

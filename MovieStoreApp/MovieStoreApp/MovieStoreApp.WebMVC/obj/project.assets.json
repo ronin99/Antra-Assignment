@@ -192,22 +192,9 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "MovieStoreApp.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/MovieStoreApp.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MovieStoreApp.Core.dll": {}
-        }
-      },
       "MovieStoreApp.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "MovieStoreApp.Core": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/MovieStoreApp.Infrastructure.dll": {}
         },
@@ -540,11 +527,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MovieStoreApp.Core/1.0.0": {
-      "type": "project",
-      "path": "../MovieStoreApp.Core/MovieStoreApp.Core.csproj",
-      "msbuildProject": "../MovieStoreApp.Core/MovieStoreApp.Core.csproj"
-    },
     "MovieStoreApp.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../MovieStoreApp.Infrastructure/MovieStoreApp.Infrastructure.csproj",
@@ -564,11 +546,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.WebMVC\\MovieStoreApp.WebMVC.csproj",
+      "projectUniqueName": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.WebMVC\\MovieStoreApp.WebMVC.csproj",
       "projectName": "MovieStoreApp.WebMVC",
-      "projectPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.WebMVC\\MovieStoreApp.WebMVC.csproj",
+      "projectPath": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.WebMVC\\MovieStoreApp.WebMVC.csproj",
       "packagesPath": "C:\\Users\\shhop\\.nuget\\packages\\",
-      "outputPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.WebMVC\\obj\\",
+      "outputPath": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.WebMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -588,8 +570,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj": {
-              "projectPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj"
+            "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj": {
+              "projectPath": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj"
             }
           }
         }

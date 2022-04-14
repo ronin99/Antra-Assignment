@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj": {}
+    "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj": {}
   },
   "projects": {
-    "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj": {
+    "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj",
+        "projectUniqueName": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj",
         "projectName": "MovieStoreApp.Core",
-        "projectPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj",
+        "projectPath": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj",
         "packagesPath": "C:\\Users\\shhop\\.nuget\\packages\\",
-        "outputPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Core\\obj\\",
+        "outputPath": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "MovieStoreApp.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/MovieStoreApp.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MovieStoreApp.Core.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "MovieStoreApp.Core/1.0.0": {
-      "type": "project",
-      "path": "../MovieStoreApp.Core/MovieStoreApp.Core.csproj",
-      "msbuildProject": "../MovieStoreApp.Core/MovieStoreApp.Core.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "MovieStoreApp.Core >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\shhop\\.nuget\\packages\\": {},
@@ -33,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj",
+      "projectUniqueName": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj",
       "projectName": "MovieStoreApp.Infrastructure",
-      "projectPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj",
+      "projectPath": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Infrastructure\\MovieStoreApp.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\shhop\\.nuget\\packages\\",
-      "outputPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Infrastructure\\obj\\",
+      "outputPath": "D:\\game\\Antra-Assignment\\MovieStoreApp\\MovieStoreApp\\MovieStoreApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,11 +37,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj": {
-              "projectPath": "D:\\Games\\c#\\MovieStoreApp\\MovieStoreApp.Core\\MovieStoreApp.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

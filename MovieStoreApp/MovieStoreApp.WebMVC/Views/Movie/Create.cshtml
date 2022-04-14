@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*@model MovieModel
+<div class="row">
+    <form  method="post">
+        <div class="mb-3">
+        <labal asp-for="Title"></labal>
+        <input asp-for="Title" class="form-control"/>
+        </div>
+
+        <div class="mb-3">
+        <labal asp-for="ReleaseDate"></labal>
+        <input asp-for="ReleaseDate" class="form-control"/>
+        </div>
+
+
+        <div class="mb-3">
+        <labal asp-for="Duration"></labal>
+        <input asp-for="Duration" class="form-control"/>
+        </div>
+
+         <div class="mb-3">
+        <labal asp-for="Description"></labal>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Add Movie" class="btn-primary btn-primary"/>
+    </form>
+</div>
+*@
