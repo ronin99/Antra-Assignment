@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Core.Entity
 {
@@ -28,5 +29,11 @@ namespace MovieStoreApp.Core.Entity
         [Column(TypeName = "Varchar")]
         public string ProfilePath { get; set; }
 
+        public virtual ICollection<MovieCast> MovieCasts { get; set; }
+
+        public static implicit operator Cast(CastModel v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

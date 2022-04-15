@@ -2,9 +2,9 @@
 using MovieStoreApp.Core.Entity;
 using MovieStoreApp.Infrastructure.Data;
 using MovieStoreApp.Infrastructure.Repository;
-using WebApplication1.Contracts.Repository;
+using MovieStoreApp.Contracts.Repository;
 
-namespace WebApplication1.Infrastructure.Repository
+namespace MovieStoreApp.Infrastructure.Repository
 {
     public class CastRepositoryAsync : BaseRepositoryAsync<Cast>,ICastRepositoryAsync
     {
@@ -16,7 +16,7 @@ namespace WebApplication1.Infrastructure.Repository
 
         public async Task<IEnumerable<Cast>> GetTop10CastAsync()
         {
-            return await context.Cast.Take(10).ToListAsync();
+            return await context.Cast.OrderByDescending(x => x.Name).Take(12).ToListAsync();
         }
     }
 }

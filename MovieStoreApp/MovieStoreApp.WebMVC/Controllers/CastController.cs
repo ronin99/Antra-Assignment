@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Contracts.Services;
+using MovieStoreApp.Contracts.Services;
 
-namespace WebApplication1.Controllers
+namespace MovieStoreApp.Controllers
 {
     public class CastController : Controller
     {
-        ICastServiceAsync c;
-        public CastController(ICastServiceAsync a)
+        ICastServiceAsync castcontext;
+        public CastController(ICastServiceAsync cser)
         {
-            c = a;
+            castcontext = cser;
         }
         public async Task<IActionResult> Index()
         {
             ViewBag.Title = "All Cast";
-            var result = await c.GetTop10CastAsync();
+            var result = await castcontext.GetTop10CastAsync();
 
             return View(result);
         }

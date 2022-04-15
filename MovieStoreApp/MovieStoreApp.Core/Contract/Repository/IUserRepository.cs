@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Contracts.Repository
+﻿namespace MovieStoreApp.Contracts.Repository
 {
     public interface IUserRepository
     {

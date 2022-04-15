@@ -1,22 +1,22 @@
 ﻿using MovieStoreApp.Core.Models;
-using WebApplication1.Contracts.Repository;
-using WebApplication1.Infrastructure.Repository;
+using MovieStoreApp.Contracts.Repository;
+using MovieStoreApp.Infrastructure.Repository;
 
-namespace WebApplication1.Contracts.Services
+namespace MovieStoreApp.Contracts.Services
 {
     public class CastServiceAsync : ICastServiceAsync
     {
 
-        ICastRepositoryAsync m;
-        public CastServiceAsync(ICastRepositoryAsync _se)
+        ICastRepositoryAsync context;
+        public CastServiceAsync(ICastRepositoryAsync _ser)
         {
-            m = _se;
+            context = _ser;
         }
 
 
        public async Task<IEnumerable<CastModel>> GetTop10CastAsync()
         {
-            var result = await m.GetTop10CastAsync();
+            var result = await context.GetTop10CastAsync();
             List<CastModel> lst = new List<CastModel>();
             foreach (var movie in result)
             {

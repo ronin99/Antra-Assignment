@@ -5,19 +5,29 @@
 }
 @model MovieResponseModel
 
-<div class="container">
+<div class="container bg-dark text-light">
     <div class="row">
         <div class="col-8">
-            <img src="@Model.PosterUrl"/>
+            <img  class="img-thumbnail"src="@Model.PosterUrl"/>
         </div>
         <div class="col-4">
             <table>
-                <tr>
-                    <td>Title</td>
+                <tr class="row mt-2"" >
+                    <td>Title:</td>
                     <td>@Model.Title</td>
                 </tr>
-                  <tr>
-                    <td>Relase Date</td>
+
+                <tr class="row mt-2"" >
+                    <td>Tagline:</td>
+                    <td>@Model.Tagline</td>
+                </tr>
+                <tr class="row mt-2"" >
+                    <td>Overview:</td>
+                    <td>@Model.Overview</td>
+                </tr>
+
+                  <tr class="row mt-2"" >
+                    <td>Relase Date:</td>
                     <td>@Model.ReleaseDate</td>
                 </tr>
             </table>

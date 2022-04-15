@@ -1,16 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MovieStoreApp.WebMVC.Models;
-using WebApplication1.Contracts.Services;
+using MovieStoreApp.Contracts.Services;
+using MovieStoreApp.Core.Contract.Services;
 
 namespace MovieStoreApp.WebMVC.Controllers
 {
     public class MovieController : Controller
     {
         IMovieServiceAsync movieSerice;
-        public MovieController(IMovieServiceAsync m)
+        IMovieCastServiceAsync movieCastService;
+        //imovecsat serviceasync 
+        public MovieController(IMovieServiceAsync ser, IMovieCastServiceAsync se)
         {
-            movieSerice = m;
+            movieSerice = ser;
+            movieCastService = se;
         }
             
 
@@ -18,14 +22,17 @@ namespace MovieStoreApp.WebMVC.Controllers
         {
             ViewBag.Titile = "All Moviews";
 
-            var result = await movieSerice.GetTop10RevenueMoviesAsync();
+            //var result = await movieSerice.GetTop12RevenueMoviesAsync();
+            //using component dont need to return result
             
-            return View(result);
+            return View();
         }
 
         public async Task<IActionResult> Detail(int id)
         {
             var result =await movieSerice.GetByIdAsync(id);
+            result.MovieCasts = await movieCastService.GetAllByMovieIdAsync(id);
+           
             return View(result);
         }
 

@@ -10,9 +10,9 @@
     
 <div class="row">
 @foreach(var m in Model){
-    <div class="col-4">
+    <div class="col-4 mb-4">
     <div class="card" style="width: 18rem;">
-  <img src="@m.ProfilePath" class="card-img-top" alt="...">
+  <img src="@m.ProfilePath" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg'" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">@m.Name</h5>
   

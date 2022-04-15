@@ -1,9 +1,10 @@
 ﻿using MovieStoreApp.Core.Models;
-using WebApplication1.Contracts.Repository;
-using WebApplication1.Contracts.Services;
+using MovieStoreApp.Contracts.Repository;
+using MovieStoreApp.Contracts.Services;
 
-namespace WebApplication1.Infrastructure.Services
+namespace MovieStoreApp.Infrastructure.Services
 {
+    //this file will implement the method
     public class MovieServiceAsync : IMovieServiceAsync
     {
         IMovieRepositoryAsync movieRepository;
@@ -37,9 +38,9 @@ namespace WebApplication1.Infrastructure.Services
             return model;
         }
 
-        public async Task<IEnumerable<MovieResponseModel>> GetTop10RevenueMoviesAsync()
+        public async Task<IEnumerable<MovieResponseModel>> GetTop12RevenueMoviesAsync()
         {
-            var result = await movieRepository.GetTop10RevenueMoviesAsync();
+            var result = await movieRepository.GetTop12RevenueMoviesAsync();
             List<MovieResponseModel> lst = new List<MovieResponseModel>();
             foreach (var movie in result)
             {

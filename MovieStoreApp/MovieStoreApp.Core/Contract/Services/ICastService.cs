@@ -1,6 +1,6 @@
 ﻿using MovieStoreApp.Core.Models;
 
-namespace WebApplication1.Contracts.Services
+namespace MovieStoreApp.Contracts.Services
 {
     public interface ICastServiceAsync
     {

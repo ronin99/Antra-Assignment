@@ -10,6 +10,7 @@ namespace MovieStoreApp.Core.Entity
 {
     public class Genre
     {
+        [Key]
         public int Id { get; set; }
 
 
