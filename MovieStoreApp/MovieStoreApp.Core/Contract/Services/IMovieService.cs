@@ -6,5 +6,6 @@ namespace MovieStoreApp.Contracts.Services
     {
         Task<IEnumerable<MovieResponseModel>> GetTop12RevenueMoviesAsync();
         Task<MovieResponseModel> GetByIdAsync(int id);
+        Task<IEnumerable<MovieResponseModel>> MoviesByGenreAsync(int movieId, int pagesize = 30, int pageNumber = 1);
     }
 }

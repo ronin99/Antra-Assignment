@@ -29,7 +29,7 @@ namespace MovieStoreApp.Core.Entity
         [Column(TypeName = "Varchar")]
         public string ProfilePath { get; set; }
 
-        public virtual ICollection<MovieCast> MovieCasts { get; set; }
+        //public virtual ICollection<MovieCast> MovieCasts { get; set; }
 
         public static implicit operator Cast(CastModel v)
         {

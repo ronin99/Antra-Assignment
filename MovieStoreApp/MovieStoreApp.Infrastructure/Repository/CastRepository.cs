@@ -16,7 +16,7 @@ namespace MovieStoreApp.Infrastructure.Repository
 
         public async Task<IEnumerable<Cast>> GetTop10CastAsync()
         {
-            return await context.Cast.OrderByDescending(x => x.Name).Take(12).ToListAsync();
+            return await context.Cast.OrderByDescending(x => x.Name).ToListAsync();
         }
     }
 }

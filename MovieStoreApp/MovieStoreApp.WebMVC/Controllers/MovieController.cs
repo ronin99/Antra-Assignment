@@ -3,13 +3,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MovieStoreApp.WebMVC.Models;
 using MovieStoreApp.Contracts.Services;
 using MovieStoreApp.Core.Contract.Services;
+using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.WebMVC.Controllers
 {
+   // [Route("cast")]
     public class MovieController : Controller
     {
-        IMovieServiceAsync movieSerice;
-        IMovieCastServiceAsync movieCastService;
+        private readonly IMovieServiceAsync movieSerice;
+        private readonly IMovieCastServiceAsync movieCastService;
         //imovecsat serviceasync 
         public MovieController(IMovieServiceAsync ser, IMovieCastServiceAsync se)
         {
@@ -18,14 +20,28 @@ namespace MovieStoreApp.WebMVC.Controllers
         }
             
 
-        public async Task<IActionResult> Index()
+        //[Route("/list")]
+        public async Task<IActionResult> Index(int pg =1)
         {
             ViewBag.Titile = "All Moviews";
 
-            //var result = await movieSerice.GetTop12RevenueMoviesAsync();
+
+            // var result = await movieSerice.GetTop12RevenueMoviesAsync();
             //using component dont need to return result
-            
+            //var result = await movieSerice.GetTop12RevenueMoviesAsync();
+            //const int pageSize = 30;
+            //if (pg < 1)
+            //    pg = 1;
+
+            //int reCsCount = result.Count();
+            //var pager = new PageModel(reCsCount, pg, pageSize);
+            //int recSkip = (pg - 1) * pageSize;
+            //var data = result.Skip(recSkip).Take(pager.PageSize).ToList();
+            //this.ViewBag.Pager = pager;
+            //return View(data);
+
             return View();
+            //return ViewComponent("TopMovie");
         }
 
         public async Task<IActionResult> Detail(int id)
@@ -51,7 +67,7 @@ namespace MovieStoreApp.WebMVC.Controllers
         //    }
         //    return View(movie);
         //}
-        
+
 
         
     }
