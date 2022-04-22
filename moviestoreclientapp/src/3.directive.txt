@@ -1,0 +1,13 @@
+directive used to work with dom(document object model) elements 
+3 types of directive
+    1. structural directive-> used to mainpulate the structure of dom(html) element. a ascturcture  directivce always start with astrik(*)
+        *ngIf->boolean
+        *ngSwitch
+        *ngFor
+        two structural directives can bot be usd on the same element
+        ex:
+            <div *ngif="" *ngFor=""> xx can not do that only one allow
+    2.Component directive -> @components 
+    3. Attrubute directive:
+        ngClass
+        ngStyle

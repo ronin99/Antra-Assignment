@@ -2,6 +2,11 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @model IEnumerable<MovieResponseModel>;
+@*<style>
+li:nth-of-type(1n+6) {
+        display: none;
+};
+</style>*@
 
     @{
     PageModel pager = new PageModel();
@@ -17,33 +22,40 @@
          <h4 class="display-4">
     @ViewBag.Titile
 </h4>
-    <div class="col-3">
-        <a asp-controller="movie" asp-action="Create"> Add New Movie</a>
-    </div>
+@*    <div class="col-3">
+        <a asp-controller="movie" asp-action="category" asp-route-Id="1061"> Add New Movie</a>
+    </div>*@
 
      </div>
  </div>
 
 
 
-@*<div class="row">
+<div class="row">
 @foreach(var m in Model){
     <partial name="_MovieCard" model="@m"></partial>
 }
-</div>*@
+</div>
 
-@await Component.InvokeAsync("TopMovie")
-@*<div class="container">
+@*@await Component.InvokeAsync("TopMovie")*@
+
+</nav>
     @if(pager.TotalPages > 0)
     {
         <ul class="pagination justify-content-end">
+        <a class="page-link" asp-controller="Movie" asp-action="Index" asp-route-pg="@pager.StartPage">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
             @for(var pge=pager.StartPage; pge <=pager.EndPage; pge++)
             {
                 <li class="page-item@(pge == pager.CurrentPage ? "active":"")">
                     <a class="page-link" asp-controller="Movie" asp-action="Index" asp-route-pg="@pge">@pge</a>
                 </li>
             }
+         <a class="page-link"asp-controller="Movie" asp-action="Index" asp-route-pg="@pager.EndPage">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
         </ul>
     }
-</div>*@
+</div>
 @*//<vc:top-movie></vc:top-movie>*@

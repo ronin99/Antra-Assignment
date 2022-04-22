@@ -1,0 +1,26 @@
+<h1 *ngIf="showTitle; else showError">Hello</h1>
+<ng-template #showError> Hi </ng-template>
+
+<span>Student name ={{studentName}}</span>
+
+
+<ul [ngClass]="'jumbotron'">
+    <li *ngFor="let e of employess; even as ev; first as f;">{{e | uppercase}} {{ev}} {{f}}</li>
+</ul>
+
+
+<div [ngSwitch]="stateAcc">
+    <div *ngSwitchCase="'IL'"> This is IL</div>
+    <div *ngSwitchCase="'VA'"> This is VA</div>
+</div>
+
+<!-- even binding -->
+<input type="text" [value]="studentName">
+<input type="button" value="click me" (click)="logMessage()">
+
+
+<!-- two way binding -->
+<input [(ngModel)]='studentName'>
+<input type="button" value="click me" (click)="logMessage()">
+<br> {{studentName}}
+<router-outlet></router-outlet>

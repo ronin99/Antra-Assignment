@@ -30,14 +30,14 @@ namespace MovieStoreAPI.Controllers
 
         [HttpPost]
         [Route("add")]
-        public async Task<IActionResult> create([FromBody] CastModel model)
+        public async Task<IActionResult> Create([FromBody] CastModel model)
         {
             return Ok(await castServiceAsync.AddCastAsync(model));
         }
 
         [HttpDelete]
-        [Route("delete")]
-        public async Task<IActionResult> remove(int id)
+        [Route("delete/{id:int}")]
+        public async Task<IActionResult> Remove(int id)
         {
             return Ok(await castServiceAsync.DeleteCastAsync(id));
         }

@@ -22,7 +22,7 @@ namespace MovieStoreApp.Core.Models
         [Column(TypeName = "Varchar")]
         public string Character { get; set; }
 
-        public virtual Movie Movie { get; set; }  //lazy loading
-        public virtual Cast Cast { get; set; }  //virtual properties help in lazy loading
+        public virtual MovieResponseModel? Movie { get; set; }  //lazy loading
+        public virtual CastModel? Cast { get; set; }  //virtual properties help in lazy loading
     }
 }

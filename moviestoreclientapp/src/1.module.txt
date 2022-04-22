@@ -1,0 +1,41 @@
+Note
+
+module is the building block of the angular application...
+every angular app must have at least one module the default module is appmodule
+
+To create a module...
+    1. use @NgModule decorator to
+        a.  @NgModule decorator contains declaration[], providers[],imports[],export[], boostrap[]
+
+declaration[]:
+is used to excute the component
+to make the component executable you need to declare it in the declaration[]
+
+imports[]:
+if you want to import other modules in current module place the module in the imports[]
+
+providers[]:
+if you want to register the services then register them in providers[]
+    
+export[]:
+
+boostrap[]:
+used to specify the default component of the module
+
+
+@NgModule is decorator which contains the metadata for a module class and it will assign that metadata at runtime
+
+
+How to add module 
+in the terminal ng generate module module-name
+or
+ng g m module-name
+
+
+
+module ->
+    components
+    service
+    pipe -> used to format the data
+    directive -> used to work with dom element
+

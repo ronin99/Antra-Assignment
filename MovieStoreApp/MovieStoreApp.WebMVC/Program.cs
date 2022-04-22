@@ -32,11 +32,15 @@ builder.Services.AddDbContext<MovieContext>(option =>
 builder.Services.AddScoped<IMovieRepositoryAsync, MovieRepositoryAsync>();
 builder.Services.AddScoped<ICastRepositoryAsync, CastRepositoryAsync>();
 builder.Services.AddScoped<IMovieCastRepositoryAsync, MovieCastRepositoryAsync>();
+builder.Services.AddScoped<IMovieGenreRepositoryAsync, MovieGenreRepositoryAsync>();
+builder.Services.AddScoped<IGenerRepositoryAsync, GenreRepositorAsync>();
 
 ////services
 builder.Services.AddScoped<IMovieServiceAsync, MovieServiceAsync>();
 builder.Services.AddScoped<ICastServiceAsync, CastServiceAsync>();
 builder.Services.AddScoped<IMovieCastServiceAsync, MovieCastServiceAsync>();
+builder.Services.AddScoped<IMovieGenreServiceAsync, MovieGenreServiceAsync>();
+builder.Services.AddScoped<IGenreServiceAsync, GenreServiceAsync>();
 #endregion
 var app = builder.Build();
 

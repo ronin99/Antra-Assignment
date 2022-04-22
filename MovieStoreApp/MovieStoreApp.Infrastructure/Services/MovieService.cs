@@ -1,6 +1,7 @@
 ﻿using MovieStoreApp.Core.Models;
 using MovieStoreApp.Contracts.Repository;
 using MovieStoreApp.Contracts.Services;
+using MovieStoreApp.Core.Entity;
 
 namespace MovieStoreApp.Infrastructure.Services
 {
@@ -13,6 +14,32 @@ namespace MovieStoreApp.Infrastructure.Services
         {
             movieRepository = _m;
         }
+
+        public async Task<int> AddMovieAsync(MovieResponseModel model)
+        {
+            Movie m= new Movie();
+            m.Title = model.Title;
+            m.Overview = model.Overview;
+            m.Tagline = model.Tagline;
+            m.Budget = model.Budget;
+            m.ImdbUrl = model.ImdbUrl;
+            m.TmdbUrl = model.TmdbUrl;
+            m.PosterUrl = model.PosterUrl;
+            m.BackdropUrl = model.BackdropUrl;
+            m.OriginalLanguage = model.OriginalLanguage;
+            m.ReleaseDate = model.ReleaseDate;
+            m.Price = model.Price;
+            m.Revenue = model.Revenue;
+            m.Runtime = model.Runtime;
+            
+            return await movieRepository.InsertAsync(m);
+        }
+
+        public async Task<int> DeleteMovieAsync(int id)
+        {
+            return await movieRepository.DeleteAsync(id);
+        }
+
         public async Task<MovieResponseModel> GetByIdAsync(int id)
         {
             MovieResponseModel model = new MovieResponseModel();

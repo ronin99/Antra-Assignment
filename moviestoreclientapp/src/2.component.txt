@@ -1,0 +1,20 @@
+Component is just a  class.
+it uses @component decorator 
+    ->selector
+    ->templateUrl
+    ->StyleUrl
+
+selector-> this is used to access the template
+templateUrl-> template lurl will use the html code for the component
+StyleUrl-> link the css file
+
+when ever you generate any component it will generate follwing four files 
+<name>.component.ts -> typescript file containing code related to component classes
+<name>.component.html -> html code file
+<name>.component.css -> contain css for the html template
+<name>.component.spec.ts -> it will be a typescipt class used for writing unit test cases
+
+
+create components 
+ng generate component <component-name>
+ng g c <component-name>

@@ -53,7 +53,7 @@ namespace MovieStoreApp.Core.Entity
         public decimal? Price { get; set; } //? null allows
 
 
-       public virtual ICollection<MovieCast> MovieCasts { get; set; }
+      // public new ICollection<MovieCast> MovieCasts { get; set; }
 
     }
 }

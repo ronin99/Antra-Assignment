@@ -21,5 +21,11 @@ namespace MovieStoreApp.Infrastructure.Repository
         {
             return await context.MovieCast.Include("Cast").Where(x => x.MovieId == movieId).ToListAsync();
         }
+
+        public async Task<IEnumerable<MovieCast>> GetAllAsync()
+        {
+            return await context.MovieCast.OrderByDescending(x => x.Character).ToListAsync();
+        }
+
     }
 }

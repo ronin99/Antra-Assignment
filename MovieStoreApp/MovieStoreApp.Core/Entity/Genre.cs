@@ -17,5 +17,7 @@ namespace MovieStoreApp.Core.Entity
         [MaxLength(30)]
         [Column(TypeName = "Varchar")]
         public string Name { get; set; }
+
+        public virtual ICollection<MovieGenre> MovieGenres { get; set; }
     }
 }

@@ -10,6 +10,11 @@ namespace MovieStoreApp.Core.Contract.Services
     public interface IMovieCastServiceAsync
     {
         Task<IEnumerable<MovieCastModel>> GetAllByMovieIdAsync(int movieId);
-      
+        Task<IEnumerable<MovieCastModel>> GetAllAsync();
+
+        Task<int> AddMovieCastAsync(MovieCastModel model);
+        Task<int> DeleteMovieCastAsync(int id);
+        
+        Task<MovieCastModel> GetMovieCastByIdAsync(int id);
     }
 }

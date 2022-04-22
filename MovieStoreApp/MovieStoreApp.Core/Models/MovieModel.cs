@@ -50,6 +50,8 @@ namespace MovieStoreApp.Core.Models
         public int Runtime { get; set; }
 
         public decimal? Price { get; set; } //? null allows
-        public virtual IEnumerable<MovieCastModel> MovieCasts { get; set; }
+        //public new IEnumerable<MovieCastModel> MovieCasts { get; set; }
+         public virtual IEnumerable<MovieCastModel>? MovieCasts { get; set; }
+        // public virtual IEnumerable<MovieGenreModel> MovieGenres { get; set; }
     }
 }

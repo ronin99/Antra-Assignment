@@ -1,0 +1,12 @@
+interpolation-> use {{expression/variable/anything}} component -> template
+
+property binding -> use property that defined in the app.component.ts use [] bracket to do the property binding  component -> template
+
+event binding -> to bind any event with html comtrol use () brackets to bind the event template -> component
+
+three different ways to bind the data in one way binding
+
+
+two way binding ->
+    possible with ngModel with the property [(ngModel)] = banana in the box
+    you have to import FormsModule in appmodule if you use ngModel

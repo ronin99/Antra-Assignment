@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieStoreApp.Core.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,5 +18,7 @@ namespace MovieStoreApp.Core.Models
         [MaxLength(30)]
         [Column(TypeName = "Varchar")]
         public string Name { get; set; }
+
+       // public virtual ICollection<MovieGenreModel> MovieGenres { get; set; }
     }
 }

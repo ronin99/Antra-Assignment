@@ -12,11 +12,13 @@ namespace MovieStoreApp.WebMVC.Controllers
     {
         private readonly IMovieServiceAsync movieSerice;
         private readonly IMovieCastServiceAsync movieCastService;
+        private readonly IMovieGenreServiceAsync movieGenreService;
         //imovecsat serviceasync 
-        public MovieController(IMovieServiceAsync ser, IMovieCastServiceAsync se)
+        public MovieController(IMovieServiceAsync ser, IMovieCastServiceAsync se,IMovieGenreServiceAsync serv)
         {
             movieSerice = ser;
             movieCastService = se;
+            movieGenreService = serv;
         }
             
 
@@ -28,27 +30,36 @@ namespace MovieStoreApp.WebMVC.Controllers
 
             // var result = await movieSerice.GetTop12RevenueMoviesAsync();
             //using component dont need to return result
-            //var result = await movieSerice.GetTop12RevenueMoviesAsync();
-            //const int pageSize = 30;
-            //if (pg < 1)
-            //    pg = 1;
+            var result = await movieSerice.GetTop12RevenueMoviesAsync();
+            const int pageSize = 30;
+            if (pg < 1)
+                pg = 1;
 
-            //int reCsCount = result.Count();
-            //var pager = new PageModel(reCsCount, pg, pageSize);
-            //int recSkip = (pg - 1) * pageSize;
-            //var data = result.Skip(recSkip).Take(pager.PageSize).ToList();
-            //this.ViewBag.Pager = pager;
-            //return View(data);
+            int reCsCount = result.Count();
+            var pager = new PageModel(reCsCount, pg, pageSize);
+            int recSkip = (pg - 1) * pageSize;
+            var data = result.Skip(recSkip).Take(pager.PageSize).ToList();
+            this.ViewBag.Pager = pager;
+            return View(data);
 
-            return View();
+            //return View();
             //return ViewComponent("TopMovie");
         }
 
+
+        public async Task<IActionResult> Category(int id)
+        {
+            var result = await movieGenreService.GetGenreByMovieIdAsync(id);
+      
+            return View(result);
+        }
+
+
         public async Task<IActionResult> Detail(int id)
         {
-            var result =await movieSerice.GetByIdAsync(id);
+            var result = await movieSerice.GetByIdAsync(id);
             result.MovieCasts = await movieCastService.GetAllByMovieIdAsync(id);
-           
+
             return View(result);
         }
 
@@ -57,6 +68,7 @@ namespace MovieStoreApp.WebMVC.Controllers
 
             return View();
         }
+
         //[HttpPost]
         //public IActionResult Create(MovieModel movie)
         //{
